@@ -540,6 +540,75 @@
   }
   .price-note strong { color: var(--indigo-dark); }
 
+
+  /* ── FOUNDER ── */
+  .founder {
+    background: white;
+    padding: 6rem 2rem;
+  }
+  .founder-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5rem; align-items: center;
+  }
+  .founder-text { display: flex; flex-direction: column; gap: 1.5rem; }
+  .founder-eyebrow {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--purple);
+  }
+  .founder-quote {
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 800; line-height: 1.35;
+    color: var(--indigo-dark);
+  }
+  .founder-quote em {
+    font-style: normal;
+    background: linear-gradient(90deg, var(--indigo), var(--purple));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .founder-body {
+    font-size: 1rem; line-height: 1.8;
+    color: var(--slate);
+  }
+  .founder-name {
+    font-size: 1rem; font-weight: 800;
+    color: var(--indigo-dark);
+  }
+  .founder-title {
+    font-size: 0.82rem; color: var(--muted);
+    margin-top: 0.15rem;
+  }
+  .founder-image-wrap {
+    position: relative;
+    display: flex; justify-content: center; align-items: flex-end;
+  }
+  .founder-image-wrap img {
+    width: 100%; max-width: 520px;
+    border-radius: 4px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 48px rgba(55,48,163,0.12));
+  }
+  .founder-badge {
+    position: absolute; bottom: 1.5rem; left: 1.5rem;
+    background: linear-gradient(135deg, var(--indigo-dark), var(--purple));
+    color: white; border-radius: 12px;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.78rem; line-height: 1.5;
+    box-shadow: 0 8px 24px rgba(55,48,163,0.25);
+    max-width: 200px;
+  }
+  .founder-badge strong {
+    display: block; font-size: 1rem;
+    font-weight: 900; margin-bottom: 0.15rem;
+  }
+  @media (max-width: 768px) {
+    .founder-inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .founder-image-wrap { order: -1; }
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .hero-inner, .programs-grid, .chat-wrapper { grid-template-columns: 1fr; }
@@ -686,6 +755,46 @@
   </div>
 </section>
 
+
+
+<!-- FOUNDER -->
+<section class="founder" id="founder">
+  <div class="founder-inner">
+
+    <div class="founder-text">
+      <p class="founder-eyebrow">Meet the Founder</p>
+      <h2 class="founder-quote">
+        "I know what it feels like to be <em>left behind</em> — and I refused to let that happen to anyone else."
+      </h2>
+      <p class="founder-body">
+        I've been there. Applying to BPO companies when the industry was already shaking. Watching talented people get passed over — not because they lacked ability, but because the world moved and nobody showed them how to move with it.
+      </p>
+      <p class="founder-body">
+        Now AI is doing the same thing — but at a much bigger scale and a much faster speed. Yes, AI is displacing jobs. But it is also <strong>creating an enormous number of new ones</strong> — for the people who are ready.
+      </p>
+      <p class="founder-body">
+        I built ASCEND because readiness shouldn't be a privilege. Whether you're a barangay leader trying to serve your community better, or a job seeker who just needs someone to show them where to start — <strong>you deserve a seat at this table.</strong>
+      </p>
+      <p class="founder-body" style="font-style: italic; color: var(--purple); font-weight: 600;">
+        Let's make it happen. Together.
+      </p>
+      <div>
+        <p class="founder-name">Founder, ASCEND Talent Development</p>
+        <p class="founder-title">AI Literacy &amp; Leadership Educator · Philippines &amp; Global</p>
+      </div>
+    </div>
+
+    <div class="founder-image-wrap">
+      <img src="founder.png" alt="ASCEND Founder — HUMAN ∞ AI | Lead. Shine. Bloom." />
+      <div class="founder-badge">
+        <strong>HUMAN ∞ AI</strong>
+        Lead. Shine. Bloom.™<br>
+        <span style="opacity:0.75;font-size:0.72rem;">ASCEND Talent Development</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- PRICING -->
 <section class="pricing" id="pricing">
